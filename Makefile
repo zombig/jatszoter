@@ -1,5 +1,5 @@
-dev-enable:
+tools-enable:
 	@$(MAKE) -f tools/Makefile enable
 
-dev-update:
+tools-update:
 	@$(MAKE) -f tools/Makefile update
