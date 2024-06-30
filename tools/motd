@@ -20,12 +20,12 @@
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%
 |||||||||||||||||||||||||||||||||||||||||||||
 #############################################
-###   JATSZOTER VIRTUAL CONSOLE STARTED   ###
+###  JATSZOTER DEVELOPING CONSOLE STARTED ###
 #############################################
 # Now you are located into virtual environment
 # where you can find different tools like `cz`
 # or `pre-commit`.
 #
 # When you will finish please type `exit` or
-# press ctrl^d for end this virtual environmtn.
+# press Ctrl^d for end this virtual environment.
 #

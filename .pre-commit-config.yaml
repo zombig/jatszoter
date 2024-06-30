@@ -22,18 +22,17 @@ repos:
   - id: end-of-file-fixer
   - files: ^[requirements]\.txt$
     id: file-contents-sorter
-  - id: fix-encoding-pragma
   - id: forbid-new-submodules
   - id: mixed-line-ending
   - id: requirements-txt-fixer
   - id: sort-simple-yaml
   - id: trailing-whitespace
   repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
+  rev: v4.6.0
 - hooks:
   - id: autopep8
   repo: https://github.com/pre-commit/mirrors-autopep8
-  rev: v2.0.2
+  rev: v2.0.4
 - hooks:
   - id: isort
   repo: https://github.com/pre-commit/mirrors-isort
@@ -41,7 +40,7 @@ repos:
 - hooks:
   - id: puppet-lint
   repo: https://github.com/pre-commit/mirrors-puppet-lint
-  rev: v4.0.0
+  rev: v4.2.4
 - hooks:
   - id: forbid-crlf
   - id: remove-crlf
@@ -53,7 +52,7 @@ repos:
     files: \.(py|sh|md|yaml)$
     id: remove-tabs
   repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.5.1
+  rev: v1.5.5
 - hooks:
   - args:
     - --indent
@@ -66,19 +65,19 @@ repos:
 - hooks:
   - id: flake8
   repo: https://github.com/PyCQA/flake8
-  rev: 6.0.0
+  rev: 7.1.0
 - hooks:
   - id: validate_manifest
   repo: https://github.com/pre-commit/pre-commit
-  rev: v3.3.2
+  rev: v3.7.1
 - hooks:
   - id: pyupgrade
   repo: https://github.com/asottile/pyupgrade
-  rev: v3.4.0
+  rev: v3.16.0
 - hooks:
   - id: add-trailing-comma
   repo: https://github.com/asottile/add-trailing-comma
-  rev: v2.4.0
+  rev: v3.1.0
 - hooks:
   - id: pylint
   repo: https://github.com/pre-commit/mirrors-pylint
@@ -113,7 +112,7 @@ repos:
     types:
     - dockerfile
   repo: https://github.com/hadolint/hadolint
-  rev: v2.12.1-beta
+  rev: v2.13.0-beta
 - hooks:
   - id: check-useless-excludes
   repo: meta
@@ -123,4 +122,4 @@ repos:
     stages:
     - push
   repo: https://github.com/commitizen-tools/commitizen
-  rev: 3.2.2
+  rev: v3.27.0
