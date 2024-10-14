@@ -28,7 +28,7 @@ repos:
   - id: sort-simple-yaml
   - id: trailing-whitespace
   repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.6.0
+  rev: v5.0.0
 - hooks:
   - id: autopep8
   repo: https://github.com/pre-commit/mirrors-autopep8
@@ -65,15 +65,15 @@ repos:
 - hooks:
   - id: flake8
   repo: https://github.com/PyCQA/flake8
-  rev: 7.1.0
+  rev: 7.1.1
 - hooks:
   - id: validate_manifest
   repo: https://github.com/pre-commit/pre-commit
-  rev: v3.7.1
+  rev: v4.0.1
 - hooks:
   - id: pyupgrade
   repo: https://github.com/asottile/pyupgrade
-  rev: v3.16.0
+  rev: v3.18.0
 - hooks:
   - id: add-trailing-comma
   repo: https://github.com/asottile/add-trailing-comma
@@ -91,8 +91,8 @@ repos:
   - id: git-dirty
   - id: markdownlint
   - id: reek
-  - exclude: .*\.md$
-    id: require-ascii
+  - id: require-ascii
+    exclude: (.*\.md|motd)$
   - id: rubocop
   - id: script-must-have-extension
   - id: script-must-not-have-extension
@@ -112,7 +112,7 @@ repos:
     types:
     - dockerfile
   repo: https://github.com/hadolint/hadolint
-  rev: v2.13.0-beta
+  rev: v2.13.1-beta
 - hooks:
   - id: check-useless-excludes
   repo: meta
@@ -120,6 +120,6 @@ repos:
   - id: commitizen
   - id: commitizen-branch
     stages:
-    - push
+    - pre-push
   repo: https://github.com/commitizen-tools/commitizen
-  rev: v3.27.0
+  rev: v3.29.1
