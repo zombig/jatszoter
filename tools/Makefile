@@ -8,6 +8,31 @@ PYTHON = $(VENV)/bin/python
 # Temporary files location
 TEMP := $(shell mktemp /tmp/jatszoter-bashrc.XXXXXX)
 
+help:
+	@echo ""
+	@echo "Jatszoter Developer Console Starter"
+	@echo ""
+	@echo "  Usage: make <option>"
+	@echo ""
+	@echo "  options:"
+	@echo ""
+	@echo "      install:     install developer console"
+	@echo "      uninstall:   uninstall developer console"
+	@echo "      reinstall:   uninstall and install developer console"
+	@echo ""
+	@echo "      enable:      enable developer console"
+	@echo ""
+	@echo "      help:        show this message"
+	@echo ""
+	@echo "  examples:"
+	@echo ""
+	@echo "      make enable"
+	@echo ""
+	@echo "  credits:"
+	@echo ""
+	@echo "      zombig<me(at)zombig.name> (c) 2024"
+	@echo ""
+
 enable:
 	@if [ ! -f "$(VENV)/bin/activate" ]; then \
   		echo "ERROR: Unable to find virtual env!"; \
@@ -30,4 +55,4 @@ install: uninstall
 	$(PYTHON) -m pip install --upgrade pip
 	$(PYTHON) -m pip install -r $(REPO)/tools/requirements.txt
 
-update: uninstall install
+reinstall: uninstall install
