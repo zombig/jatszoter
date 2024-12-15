@@ -22,6 +22,8 @@ help:
 	@echo ""
 	@echo "      enable:      enable developer console"
 	@echo ""
+	@echo "      pack:        pack repo into single package"
+	@echo ""
 	@echo "      help:        show this message"
 	@echo ""
 	@echo "  examples:"
@@ -32,6 +34,9 @@ help:
 	@echo ""
 	@echo "      zombig<me(at)zombig.name> (c) 2024"
 	@echo ""
+
+pack:
+	@python3 $(REPO)/packer/pack.py -p $(REPO) -o $(REPO)/repo.json
 
 enable:
 	@if [ ! -f "$(VENV)/bin/activate" ]; then \
